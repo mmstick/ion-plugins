@@ -1,0 +1,9 @@
+#!/usr/bin/env ion
+
+# Create namespaces directories
+mkdir -p ~/.config/ion/plugins/namespaces/{strings,arrays}
+
+# Build & Install the Git Plugin
+cargo build --release &&
+    mv -i target/release/libgit.so \
+        ~/.config/ion/plugins/namespaces/strings/git.so
