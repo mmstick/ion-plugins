@@ -1,12 +1,8 @@
 [package]
-name = "ion-plugins"
+name = "ion-plugin-test"
 version = "0.1.0"
 authors = ["Michael Aaron Murphy <mmstickman@gmail.com>"]
 
 [lib]
-name = "git"
-path = "src/namespaces/strings/git/lib.rs"
+name = "test"
 crate-type = ["cdylib"]
-
-[dependencies]
-git2 = "0.6.6"

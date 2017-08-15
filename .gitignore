@@ -1,3 +1,5 @@
 /target/
 **/*.rs.bk
+namespaces/strings/git/target/
+methods/strings/test/target/
 Cargo.lock

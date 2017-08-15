@@ -1,0 +1,11 @@
+[package]
+name = "ion-plugin-git"
+version = "0.1.0"
+authors = ["Michael Aaron Murphy <mmstickman@gmail.com>"]
+
+[lib]
+name = "git"
+crate-type = ["cdylib"]
+
+[dependencies]
+git2 = "0.6.6"

@@ -2,8 +2,16 @@
 
 # Create namespaces directories
 mkdir -p ~/.config/ion/plugins/namespaces/{strings,arrays}
+mkdir -p ~/.config/ion/plugins/methods/{strings,arrays}
 
-# Build & Install the Git Plugin
-cargo build --release &&
-    mv -i target/release/libgit.so \
-        ~/.config/ion/plugins/namespaces/strings/git.so
+# Install Git Plugin
+cd namespaces/strings/git
+cargo build --release && mv -i target/release/libgit.so \
+    ~/.config/ion/plugins/namespaces/strings/git.so
+cd ../../../
+
+# Install Test Method Plugin
+cd methods/strings/test
+cargo build --release && mv -i target/release/libtest.so \
+    ~/.config/ion/plugins/methods/strings/test.so
+cd ../../../
